@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkblue">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/utelogo"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/vLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:text="ĐĂNG NHẬP HỆ THỐNG"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="27dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/vLogin"
+            android:layout_marginTop="35dp"
+            android:hint="Mã sinh viên"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/darkgrey"
+            android:background="@drawable/rounded_corner_10dp"/>
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtUser"
+            android:layout_marginTop="20dp"
+            android:hint="Mật khẩu"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/darkgrey"
+            android:background="@drawable/rounded_corner_10dp"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner_20dp"
+            android:backgroundTint="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtPassword"
+            android:layout_marginTop="40dp"
+            android:text="ĐĂNG NHẬP"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/btnForgetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:text="Quên mật khẩu?"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
