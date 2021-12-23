@@ -10,8 +10,8 @@ import javax.persistence.Table;
 @Table(name = "notification")
 public class NotificationEntity extends BaseEntity {
 
-	@Column(name = "msv")
-	private String msv;
+//	@Column(name = "msv")
+//	private String msv;
 
 	@Column(name = "content")
 	private String content;
@@ -20,13 +20,13 @@ public class NotificationEntity extends BaseEntity {
 	@JoinColumn(name = "student_id")
 	private StudentEntity student;
 
-	public String getMsv() {
-		return msv;
-	}
-
-	public void setMsv(String msv) {
-		this.msv = msv;
-	}
+//	public String getMsv() {
+//		return msv;
+//	}
+//
+//	public void setMsv(String msv) {
+//		this.msv = msv;
+//	}
 
 	public String getContent() {
 		return content;

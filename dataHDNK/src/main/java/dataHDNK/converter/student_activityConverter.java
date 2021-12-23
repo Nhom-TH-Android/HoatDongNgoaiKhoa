@@ -1,8 +1,10 @@
 package dataHDNK.converter;
 
+import org.springframework.stereotype.Component;
+
 import dataHDNK.dto.student_activityDTO;
 import dataHDNK.entity.student_activityEntity;
-
+@Component
 public class student_activityConverter {
 	public student_activityEntity toEntity(student_activityDTO dto) {
 		student_activityEntity entity = new student_activityEntity();
@@ -16,8 +18,8 @@ public class student_activityConverter {
 		}
 		dto.setCreatedDate(entity.getCreatedDate());
 		dto.setModifiedDate(entity.getModifiedDate());
-		dto.setCode(entity.getActivity().getCode());
-		dto.setMsv(entity.getStudent().getMsv());
+		dto.setActivity_id(entity.getActivity().getCode());
+		dto.setStudent_id(entity.getStudent().getMsv());
 		return dto;
 
 	}
