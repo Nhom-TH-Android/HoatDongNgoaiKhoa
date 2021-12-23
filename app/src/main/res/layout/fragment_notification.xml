@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification"
+        android:fontFamily="@font/poppins"
+        android:text="Thông báo"
+        android:textColor="#005792"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sleepingbell"
+        android:layout_below="@+id/notification"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:text="Tính năng này tạm thời chưa hoạt động. Chúng tôi sẽ cập nhật trong lần cập nhật sắp tới. Xin lỗi vì sự bất tiện này!"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

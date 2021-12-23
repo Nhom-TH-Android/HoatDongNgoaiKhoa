@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Thông tin chi tiết"
+        android:textColor="#005792"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Hoạt động 1"
+        android:textColor="#005792"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="390dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/poppins"
+        android:text="Thông tin cá nhân"
+        android:textColor="#005792"
+        android:textSize="20dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
