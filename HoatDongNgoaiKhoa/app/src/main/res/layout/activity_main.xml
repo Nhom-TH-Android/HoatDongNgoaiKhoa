@@ -30,41 +30,47 @@
             android:fontFamily="@font/poppins_medium"
             android:textSize="27dp"
             android:textStyle="bold"/>
+
         <EditText
             android:id="@+id/txtUser"
             android:layout_width="335dp"
             android:layout_height="50dp"
             android:layout_below="@+id/vLogin"
-            android:layout_marginTop="35dp"
-            android:hint="Mã sinh viên"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounded_corner_10dp"
+            android:hint="Mã sinh viên"
             android:paddingLeft="20dp"
-            android:textColorHint="@color/darkgrey"
-            android:background="@drawable/rounded_corner_10dp"/>
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgrey" />
+
         <EditText
             android:id="@+id/txtPassword"
             android:layout_width="335dp"
             android:layout_height="50dp"
             android:layout_below="@+id/txtUser"
-            android:layout_marginTop="20dp"
-            android:hint="Mật khẩu"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner_10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
             android:paddingLeft="20dp"
-            android:textColorHint="@color/darkgrey"
-            android:background="@drawable/rounded_corner_10dp"/>
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkgrey" />
+
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="200dp"
             android:layout_height="50dp"
+            android:layout_below="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
             android:background="@drawable/rounded_corner_20dp"
             android:backgroundTint="@color/blue"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/txtPassword"
-            android:layout_marginTop="40dp"
-            android:text="ĐĂNG NHẬP"
             android:fontFamily="@font/poppins_medium"
+            android:text="ĐĂNG NHẬP"
             android:textColor="@color/white"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
         <TextView
             android:id="@+id/btnForgetPass"
             android:layout_width="wrap_content"
