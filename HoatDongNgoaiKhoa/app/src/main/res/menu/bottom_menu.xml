@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/upComingFragment4"
+        android:title="Sắp tới"
+
+        android:icon="@drawable/ic_article"/>
+    <item
+        android:id="@+id/registerFragment"
+        android:title="Đăng ký"
+        android:icon="@drawable/ic_add"/>
+    <item
+        android:id="@+id/historyFragment"
+        android:title="Lịch sử"
+        android:icon="@drawable/ic_access_time"/>
+    <item
+        android:id="@+id/notificationFragment"
+        android:title="Thông báo"
+        android:icon="@drawable/ic_notifications"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_account"/>
+</menu>
