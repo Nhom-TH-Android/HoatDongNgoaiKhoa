@@ -1,50 +1,26 @@
-package dataHDNK.entity;
+package dataHDNK.dto;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+public class ActivityDTO extends BaseDTO {
 
-@Entity
-@Table(name = "activity")
-public class ActivityEntity extends BaseEntity {
-
-	@Column(name = "code")
 	private String code;
 
-	@Column(name = "name")
 	private String name;
 
-	@Column(name = "description")
 	private String description;
 
-	@Column(name = "diem")
 	private int diem;
 
-	@Column(name = "thoiGian")
 	private Date thoiGian;
 
-	@Column(name = "hetHan")
 	private Date HetHan;
 
-	@Column(name = "soLuong")
 	private int soLuong;
 
-	@Column(name = "diaDiem")
 	private String diaDiem;
 
-	@Column(name = "active")
 	private boolean active;
-
-//	@ManyToMany(mappedBy = "activities")
-//	private List<StudentEntity> Students = new ArrayList<>();
-
-	@OneToMany(mappedBy = "activity")
-	private List<student_activityEntity> students_activities = new ArrayList<>();
 
 	public String getCode() {
 		return code;
@@ -52,6 +28,14 @@ public class ActivityEntity extends BaseEntity {
 
 	public void setCode(String code) {
 		this.code = code;
+	}
+
+	public String getDiaDiem() {
+		return diaDiem;
+	}
+
+	public void setDiaDiem(String diaDiem) {
+		this.diaDiem = diaDiem;
 	}
 
 	public String getName() {
@@ -108,22 +92,6 @@ public class ActivityEntity extends BaseEntity {
 
 	public void setActive(boolean active) {
 		this.active = active;
-	}
-
-	public List<student_activityEntity> getStudents_activities() {
-		return students_activities;
-	}
-
-	public void setStudents_activities(List<student_activityEntity> students_activities) {
-		this.students_activities = students_activities;
-	}
-
-	public String getDiaDiem() {
-		return diaDiem;
-	}
-
-	public void setDiaDiem(String diaDiem) {
-		this.diaDiem = diaDiem;
 	}
 
 }

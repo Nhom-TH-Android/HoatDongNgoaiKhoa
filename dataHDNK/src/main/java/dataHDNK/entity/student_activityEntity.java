@@ -7,18 +7,22 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "notification")
-public class NotificationEntity extends BaseEntity {
-
+@Table(name = "student_activity")
+public class student_activityEntity extends BaseEntity {
+	
 	@Column(name = "msv")
 	private String msv;
-
-	@Column(name = "content")
-	private String content;
-
+	
+	@Column(name = "code")
+	private String code;
+	
 	@ManyToOne
 	@JoinColumn(name = "student_id")
 	private StudentEntity student;
+	
+	@ManyToOne
+	@JoinColumn(name="activity_id")
+	private ActivityEntity activity;
 
 	public String getMsv() {
 		return msv;
@@ -28,12 +32,12 @@ public class NotificationEntity extends BaseEntity {
 		this.msv = msv;
 	}
 
-	public String getContent() {
-		return content;
+	public String getCode() {
+		return code;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 	public StudentEntity getStudent() {
@@ -44,4 +48,11 @@ public class NotificationEntity extends BaseEntity {
 		this.student = student;
 	}
 
+	public ActivityEntity getActivity() {
+		return activity;
+	}
+
+	public void setActivity(ActivityEntity activity) {
+		this.activity = activity;
+	}
 }

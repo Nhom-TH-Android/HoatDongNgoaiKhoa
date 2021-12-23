@@ -22,14 +22,6 @@ public abstract class BaseEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "createdBy")
-	@CreatedBy
-	private String createdBy;
-	
-	@Column(name = "modifiedBy")
-	@LastModifiedBy
-	private String modifiedBy;
-	
 	@Column(name = "createdDate")
 	@CreatedDate
 	private Date createdDate;
@@ -40,22 +32,6 @@ public abstract class BaseEntity {
 
 	public Long getId() {
 		return id;
-	}
-
-	public String getCreatedBy() {
-		return createdBy;
-	}
-
-	public void setCreatedBy(String createdBy) {
-		this.createdBy = createdBy;
-	}
-
-	public String getModifiedBy() {
-		return modifiedBy;
-	}
-
-	public void setModifiedBy(String modifiedBy) {
-		this.modifiedBy = modifiedBy;
 	}
 
 	public Date getCreatedDate() {
