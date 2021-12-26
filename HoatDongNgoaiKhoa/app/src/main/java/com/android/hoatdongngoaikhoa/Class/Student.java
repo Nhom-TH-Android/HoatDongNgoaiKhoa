@@ -13,13 +13,13 @@ public class Student implements Serializable {
 
     private String lop;
 
-    private String NgSinh;
+    private String ngSinh;
 
     private String email;
 
     private String GioiTinh;
 
-    private String SDT;
+    private String sdt;
 
     private int diemHD;
 
@@ -66,11 +66,11 @@ public class Student implements Serializable {
     }
 
     public String getNgSinh() {
-        return NgSinh;
+        return ngSinh;
     }
 
     public void setNgSinh(String ngSinh) {
-        NgSinh = ngSinh;
+        this.ngSinh = ngSinh;
     }
 
     public String getEmail() {
@@ -90,11 +90,11 @@ public class Student implements Serializable {
     }
 
     public String getSDT() {
-        return SDT;
+        return sdt;
     }
 
     public void setSDT(String SDT) {
-        this.SDT = SDT;
+        this.sdt = SDT;
     }
 
     public int getDiemHD() {

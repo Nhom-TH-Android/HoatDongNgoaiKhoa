@@ -5,21 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UpcomingActivity">
+    tools:context=".UpcomingActivity"
+    android:background="@color/white">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        app:menu="@menu/bottom_menu"
         android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:itemIconTint="@color/icon_color"
         app:itemRippleColor="@color/blue"
-        app:itemIconTint="@color/icon_color" />
+        app:menu="@menu/bottom_menu" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/fragmentContainerView"
         android:layout_width="409dp"
-        android:layout_height="673dp"
+        android:layout_height="wrap_content"
         app:navGraph="@navigation/my_nav" />
 </RelativeLayout>

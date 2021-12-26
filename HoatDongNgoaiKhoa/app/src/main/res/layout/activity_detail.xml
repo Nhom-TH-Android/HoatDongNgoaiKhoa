@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Thông tin chi tiết"
+        android:textColor="#005792"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="10dp"
+        android:text="Hoạt động 1"
+        android:textColor="#005792"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="#005792"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="#005792"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="#005792"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="#005792"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/point"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="#005792"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/quantityRegister"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="#005792"
+        android:textSize="20dp" />
+
+</RelativeLayout>

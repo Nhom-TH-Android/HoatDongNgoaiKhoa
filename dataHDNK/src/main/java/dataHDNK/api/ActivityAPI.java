@@ -1,5 +1,8 @@
 package dataHDNK.api;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +29,8 @@ public class ActivityAPI {
 	
 	
 	@GetMapping(value = "/activity")
-	public String getActivity(@RequestParam("code") String code) {
-		return service.getActivity(code).getCode();
+	public ActivityDTO getActivity(@RequestParam("code") String code) {
+		return service.getActivity(code);
 	}
 	 
 	@PutMapping(value = "/activity/{id}")
@@ -38,5 +41,14 @@ public class ActivityAPI {
 	@GetMapping(value = "/activity/list")
 	public List<ActivityDTO> ListActivity() {
 		return service.getAllActivity();
+	}
+	@GetMapping(value = "/activity/listInFuture")
+	public List<ActivityDTO> ListActivityInFuture() {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		LocalDateTime now = LocalDateTime.now(); 
+//		Date date=new Date("2021/12/15");
+		String stringDate=dtf.format(now);
+		Date date=new Date(stringDate);
+		return service.getAllActivity(date);
 	}
 }

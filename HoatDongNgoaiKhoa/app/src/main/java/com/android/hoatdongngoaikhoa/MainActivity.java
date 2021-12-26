@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     loginStudent.setMsv(username);
                     loginStudent.setPassword(password);
                     Log.e("User", " " + loginStudent.getPassword());
-                    clickLogin(loginStudent);
+                    clickLogin(loginStudent, password);
                 } else {
                     Toast.makeText(MainActivity.this, "Vui lòng nhập tên đăng nhập và mật khẩu", Toast.LENGTH_SHORT).show();
                     Log.e("API Error", "username or password null");
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void clickLogin(Student studentLogin){
+    private void clickLogin(Student studentLogin, String password){
         ApiService.apiService.login(studentLogin).enqueue(new Callback<Student>() {
             @Override
             public void onResponse(Call<Student> call, Response<Student> response) {
@@ -62,8 +62,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, UpcomingActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putSerializable("objectUser", student);
+                    bundle.putString("password", password);
                     intent.putExtras(bundle);
                     startActivity(intent);
+                Log.e("Password", password+"");
 
             }
 

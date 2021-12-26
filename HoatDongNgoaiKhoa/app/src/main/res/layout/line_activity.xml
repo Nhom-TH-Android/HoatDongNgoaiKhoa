@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineActivity"
+        android:background="@drawable/rounded_corner_20dp"
+        android:backgroundTint="@color/lightblue"
+        android:clickable="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/vTilte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tiêu đề"
+            android:textColor="@color/darkblue"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/vTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vTilte"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Thời gian"
+            android:textColor="@color/darkblue"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/vAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vTime"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="Địa điểm"
+            android:textColor="@color/darkblue"
+            android:textSize="23dp" />
+        <TextView
+            android:id="@+id/vPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vAddress"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="Địểm hoạt động"
+            android:textColor="@color/darkblue"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vPoint"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_corner_20dp"
+            android:backgroundTint="@color/darkblue"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:text="Đăng ký"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+</RelativeLayout>

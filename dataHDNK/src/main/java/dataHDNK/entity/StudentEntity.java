@@ -9,6 +9,9 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
 @Entity
 @Table(name = "student")
 public class StudentEntity extends BaseEntity {
@@ -26,6 +29,7 @@ public class StudentEntity extends BaseEntity {
 	private String lop;
 
 	@Column(name = "ngSinh")
+	@JsonFormat(pattern="yyyy-MM-dd", shape=Shape.STRING)
 	private Date NgSinh;
 
 	@Column(name = "email")

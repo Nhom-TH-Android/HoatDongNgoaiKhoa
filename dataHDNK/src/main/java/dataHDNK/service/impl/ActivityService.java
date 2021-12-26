@@ -1,6 +1,7 @@
 package dataHDNK.service.impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,17 @@ public class ActivityService implements IActivityService {
 		List<ActivityEntity> listEntity = new ArrayList<>();
 		List<ActivityDTO> listDTO = new ArrayList<>();
 		listEntity = repository.findAll();
+		for (ActivityEntity entity : listEntity) {
+			listDTO.add(converter.toDTO(entity));
+		}
+		return listDTO;
+	}
+
+	@Override
+	public List<ActivityDTO> getAllActivity(Date date) {
+		List<ActivityEntity> listEntity = new ArrayList<>();
+		List<ActivityDTO> listDTO = new ArrayList<>();
+		listEntity = repository.findByThoiGianGreaterThan(date);
 		for (ActivityEntity entity : listEntity) {
 			listDTO.add(converter.toDTO(entity));
 		}

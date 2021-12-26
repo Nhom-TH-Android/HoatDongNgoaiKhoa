@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/profile"
@@ -25,20 +26,232 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/profile"/>
 
-    <TextView
+    <LinearLayout
         android:id="@+id/textView"
         android:layout_width="390dp"
         android:layout_height="390dp"
+        android:orientation="vertical"
         android:layout_below="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:text=""
-        android:backgroundTint="@color/lightblue"
-        android:background="@drawable/rounded_corner_20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_20dp"
+        android:backgroundTint="@color/lightblue"
+        android:fontFamily="@font/poppins"
         android:textColor="#005792"
-        android:textSize="18dp"
-        android:fontFamily="@font/poppins"/>
+        android:textSize="18dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Điểm hoạt động đã tích luỹ"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vDiemHD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Mã sinh viên"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vMsv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Họ tên"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vHoTen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Lớp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vLop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Số điện thoại"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vSDT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Ngày sinh"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vNgSinh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/vEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="Giới tính"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vGioiTinh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button"
